@@ -22,7 +22,8 @@
     <input type="text" v-model="name" placeholder="Masukan nama anda" :disabled="isButtonDisabled">
     <button @click="disabledToggle">Aktifkan form di samping</button>
 
-    <p>Nama anda : {{name}} </p>
+    <!-- dinamic atribut pakai v-bind -->
+    <p v-bind="attrName">Nama anda : {{name}} </p>
 
   </div>
 </template>
@@ -34,6 +35,11 @@
   const message = ref("Pesan hari ini");
   const rawHtml = ref("<p>Mari membuat html </p>")
   let name = ref("")
+  // dinamic atribut gunakan objek id dan class
+  let attrName = ref({
+    id: 'nameid',
+    class: 'nameclass'
+  })
 
   const disabledToggle = () => {
     isButtonDisabled.value = !isButtonDisabled.value
@@ -42,6 +48,10 @@
 </script>
 
 <style scoped>
+  .nameclass {
+    color: blue;
+  }
+
   .counter {
     margin-left: 50px;
   }
