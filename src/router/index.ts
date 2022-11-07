@@ -1,4 +1,5 @@
 import MyHomeVue from '@/views/MyHome.vue'
+import ReactivePage from '@/views/ReactivePage.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
@@ -10,9 +11,9 @@ const router = createRouter({
       component: MyHomeVue
     },
     {
-        path: '/about',
-        name: 'about',
-        component: () => import('@/views/MyAbout.vue')
+      path: '/reactive',
+      name: 'reactive',
+      component: ReactivePage
     }
   ]
 })

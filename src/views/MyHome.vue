@@ -5,7 +5,7 @@
         <router-link to="/">Home</router-link>
       </li>
       <li>
-        <router-link to="/about">About</router-link>
+        <router-link to="/reactive">Reactive</router-link>
       </li>
     </ul>
   </nav>
@@ -56,9 +56,11 @@
     margin-left: 50px;
   }
 
-  nav {
-    background-color: #f3f3f3;
-    padding: 20px;
+  nav{
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    align-self: center;
   }
 
   ul {
