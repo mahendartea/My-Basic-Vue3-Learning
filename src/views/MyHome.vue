@@ -7,12 +7,15 @@
       <li>
         <router-link to="/reactive">Reactive</router-link>
       </li>
+      <li>
+        <router-link to="computed">Computed</router-link>
+      </li>
     </ul>
   </nav>
   <div class="counter">
     <h1>{{angka}}</h1>
-    <button @click="angka++">Tambah 1 </button>
-    <button @click="angka--">Kurang 1 </button>
+    <button @click="angka++"> Tambah 1 </button>
+    <button @click="angka--"> Kurang 1 </button>
 
     <p>{{message}}</p>
     <div v-html="rawHtml"> </div>

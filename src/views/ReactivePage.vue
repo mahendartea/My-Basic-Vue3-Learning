@@ -8,6 +8,9 @@
       <li>
         <router-link to="/reactive">Reactive</router-link>
       </li>
+      <li>
+        <router-link to="/computed">Computed</router-link>
+      </li>
     </ul>
   </nav>
 
@@ -26,7 +29,7 @@
 
     <div class="ref">
       <h1>This ref segment</h1>
-      {{hitung.tugas}}
+      Nilai Tugas : {{hitung.tugas}}
       <button @click="tambahya">+</button>
 
     </div>
@@ -34,7 +37,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
   import {reactive, ref} from 'vue';
 
   const state = reactive({count: 0})
